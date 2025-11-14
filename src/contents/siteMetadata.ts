@@ -30,6 +30,7 @@ export const siteMetadata = {
   },
 
   postPageSize: 9,
+  leetcodeUserName: 'brianshencc',
 };
 
 /**
@@ -104,4 +105,5 @@ export const featureSwich = {
   dashboard_wakatime: false,
   dashboard_github: true,
   topBanner: true,
+  dashboard_leetcode: true,
 };
