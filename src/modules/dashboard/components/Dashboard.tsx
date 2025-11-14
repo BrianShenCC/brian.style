@@ -1,8 +1,10 @@
+'use client';
 import Breakline from '@/common/components/elements/Breakline';
-import { author, featureSwich } from '@/contents/siteMetadata';
+import { author, featureSwich, siteMetadata } from '@/contents/siteMetadata';
 
 import CodingActive from './CodingActive';
 import Contributions from './Contributions';
+import LeetCodeStats from './LeetCode';
 
 const Dashboard = () => {
   return (
@@ -29,6 +31,12 @@ const Dashboard = () => {
               ))}
           </div>
         )}
+      {featureSwich.dashboard_leetcode && (
+        <>
+          <Breakline className='mt-10 mb-8' />
+          <LeetCodeStats username={siteMetadata.leetcodeUserName} />
+        </>
+      )}
     </>
   );
 };
